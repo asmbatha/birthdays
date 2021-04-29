@@ -1,0 +1,64 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    padding: 8px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.nav a {
+    font-size: 18px;
+    font-weight: 900;
+    color: purple;
+    padding: 0 8px;
+}
+
+.nav a.active {
+    text-decoration: none;
+    color: black;
+    pointer-events: none;
+}
+
+.body {
+    width: 100%;
+    max-width: 600px;
+    margin: 36px auto;
+}
+
+.birthday-item {
+    display: flex;
+    border-bottom: 1px solid #bbbbbb;
+    padding: 6px;
+}
+
+.birthday-title {
+    flex: 1;
+}
+
+form {
+    background: #eee;
+    padding: 8px;
+}
+
+.form-element {
+    padding: 6px;
+}
+
+.form-element label {
+    display: block;
+}
+
+.form-element input {
+    width: 100%;
+    padding: 6px;
+}
+
+.form-element button {
+    padding: 6px;
+}

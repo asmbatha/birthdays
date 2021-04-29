@@ -1,25 +1,14 @@
-class Api {
-    constructor () {
-        this.birthdays = JSON.parse(localStorage.birthdays) || []
+export const birthdays = [
+    {
+        title: 'Jesus',
+        date: '2000-12-25'
+    },
+    {
+        title: 'Reitu',
+        date: '1994-01-29'
     }
+]
 
-    sync () {
-        localStorage.birthdays = JSON.stringify(this.birthdays)
-    }
-
-    addEvent (event) {
-        this.birthdays.push(event)
-        this.sync()
-    }
-
-    get allEvents () {
-        return this.birthdays
-    }
-
-    get monthEvents (month) {
-        console.log('month', month)
-        return this.birthdays
-    }
+export function addNew (param) {
+    birthdays.push(param)
 }
-
-export default new Api()
